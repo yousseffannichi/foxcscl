@@ -2,8 +2,8 @@ import https from 'https';
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: process.env.REACT_APP_API_URL || 'http://54.157.171.89:3000/books',
-    hostname: process.env.REEACT_APP_API_HOST || 'http://54.157.171.89:3000/',
+    baseURL: process.env.REACT_APP_API_URL || 'http://54.157.171.89',
+    hostname: process.env.REEACT_APP_API_HOST || 'http://54.157.171.89',
     httpsAgent: https.Agent({
         rejectUnauthorized: false,
     }),
